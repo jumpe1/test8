@@ -8,6 +8,8 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-16.04
+    env:
+      TZ: 'Asia/Tokyo'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v1
@@ -15,4 +17,3 @@ jobs:
         uses: jumpe1/test8/.github/actions/latex@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TZ: Asia/Tokyo
