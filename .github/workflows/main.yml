@@ -15,4 +15,4 @@ jobs:
         uses: jumpe1/test8/.github/actions/latex@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEBIAN_FRONTEND: noninteractive
+          TZ: Asia/Tokyo
