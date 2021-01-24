@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu:latest
     env:
       TZ: 'Asia/Tokyo'
     steps:
@@ -17,3 +17,4 @@ jobs:
         uses: jumpe1/test8/.github/actions/latex@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TZ: 'Asia/Tokyo'
